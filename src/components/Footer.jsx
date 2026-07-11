@@ -23,8 +23,8 @@ export default function Footer() {
             <h4>Navegação</h4>
             <nav>
               <Link to="/">Início</Link>
-              <Link to="/memorials">Consulta Pública</Link>
-              <Link to="/map">Geolocalização</Link>
+              <Link to="/memoriais">Consulta Pública</Link>
+              <Link to="/mapa">Geolocalização</Link>
             </nav>
           </div>
 

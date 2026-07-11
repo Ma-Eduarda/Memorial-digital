@@ -21,7 +21,7 @@ git clone https://github.com/SEU-USUARIO/memorial-digital.git
 ### 2. Entre na pasta do projeto
 
 ```bash
-cd memorial-digital
+cd memorial-digital-main
 ```
 
 ### 3. Instale as dependências
@@ -47,7 +47,7 @@ npm start
 O projeto será iniciado em:
 
 ```
-http://localhost:3000
+http://localhost:5000
 ```
 
 ## Funcionalidades

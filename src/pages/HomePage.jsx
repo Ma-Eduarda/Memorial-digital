@@ -41,7 +41,7 @@ export default function HomePage() {
 
     const q = searchQuery.trim();
     if (!q) return;
-    navigate(`/memorials?search=${encodeURIComponent(q)}`);
+    navigate(`/memoriais?search=${encodeURIComponent(q)}`);
   }
 
   return (
@@ -86,7 +86,7 @@ export default function HomePage() {
             {filteredResults.length > 0 && (
               <div className={styles.searchResults}>
                 {filteredResults.map((memorial) => (
-                  <Link key={memorial.id} to={`/memorial/${memorial.id}`} className={styles.resultItem}>
+                  <Link key={memorial.id} to={`/memoriais/${memorial.id}`} className={styles.resultItem}>
                     <img src={memorial.imagem} alt={memorial.nome} />
                     <div><strong>{memorial.nome}</strong></div>
                   </Link>
