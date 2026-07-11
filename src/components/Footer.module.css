@@ -1,0 +1,136 @@
+.footer {
+  background: #0066cc; 
+  color: #e6f0ff;
+  padding: 60px 0 0;
+  border-top: 4px solid #1f78d1;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.brand {
+  max-width: 360px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.logoIcon {
+  color: #ffd700; 
+}
+
+.logoText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.brandDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #a0c4ff;
+  text-align: center; 
+}
+
+.links h4,
+.contact h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+.links nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.links a {
+  color: #a0c4ff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #a0c4ff;
+}
+
+.contactItem svg {
+  flex-shrink: 0;
+  color: #ffd700;
+  margin-top: 2px;
+}
+
+.contactItem span {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottom p {
+  font-size: 0.875rem;
+  color: #80aae6;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 48px 0 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .bottom {
+    text-align: center;
+  }
+}
