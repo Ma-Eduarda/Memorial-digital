@@ -4,20 +4,20 @@
     z-index: 999;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    font-family: 'Roboto', 'Inter', sans-serif; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', 'Inter', sans-serif;
 }
 
 
 /* BARRA PRINCIPAL */
 .mainBar {
-    background: #0066cc; 
+    background: #0066cc;
 }
 
 .container {
     max-width: 1280px;
     margin: auto;
-    height: 80px; 
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@
 
 .subtitle {
     font-size: 0.85rem;
-    color: #cba052; 
+    color: #cba052;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -77,7 +77,7 @@
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 20px;
-    color: #ffffff;
+    color: #ffffffd5;
     font-weight: 600;
     font-size: 0.95rem;
     transition: 0.2s;
@@ -93,7 +93,7 @@
 }
 
 .navLinkActive:hover {
-    background: #f0f4f8;
+    background: #f8f4f0;
 }
 
 .mobileMenuBtn {
@@ -108,8 +108,9 @@
 /* RESPONSIVO */
 @media(max-width: 992px) {
     .accLinks {
-        display: none; 
+        display: none;
     }
+
     .accContainer {
         justify-content: flex-end;
     }
@@ -119,12 +120,13 @@
     .mobileMenuBtn {
         display: block;
     }
+
     .nav {
         position: absolute;
-        top: 115px; 
+        top: 115px;
         left: 0;
         right: 0;
-        background: #0056b3;
+        background: #0066cc;
         flex-direction: column;
         padding: 20px;
         transform: translateY(-10px);
@@ -132,19 +134,67 @@
         visibility: hidden;
         transition: 0.3s;
         border-bottom: 4px solid #004c99;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
     .navOpen {
         opacity: 1;
         visibility: visible;
         transform: none;
     }
+
     .navLink {
         width: 100%;
         text-align: center;
         padding: 14px;
     }
+
     .subtitle {
-        display: none; 
+        display: none;
+    }
+
+    .logoImg {
+        max-width: 120px;
+    }
+
+    .sistemaDigitalText {
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+
+    .headerDivider {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 0.95rem;
+    }
+
+    .logo {
+        transform: scale(0.9);
+        transform-origin: left center;
+    }
+
+    .active {
+        padding: 14px 22px;
+    }
+
+    .navLink {
+        padding: 10px 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .sistemaDigitalText,
+    .headerDivider {
+        display: none;
     }
 }

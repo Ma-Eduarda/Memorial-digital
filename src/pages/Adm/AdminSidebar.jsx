@@ -1,13 +1,11 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { 
-    LayoutDashboard, Users, FileText, Settings, LogOut, 
-    ChevronRight, ChevronLeft 
-} from 'lucide-react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import {LayoutDashboard, Users, FileText, Settings, LogOut,ChevronRight, ChevronLeft} from 'lucide-react';
 import styles from './AdminSidebar.module.css';
 
 export default function AdminSidebar() {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleSidebar = () => setIsOpen(!isOpen);
     const closeOnMobile = () => setIsOpen(false);
@@ -63,7 +61,7 @@ export default function AdminSidebar() {
                 </nav>
                 
                 <div className={styles.sidebarFooter}>
-                    <button className={styles.navItem} onClick={() => alert("Saindo do sistema...")}>
+                    <button className={styles.navItem} onClick={() => navigate("/")}>
                         <LogOut size={20} /> Sair
                     </button>
                 </div>

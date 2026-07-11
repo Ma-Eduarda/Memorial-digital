@@ -13,13 +13,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr;
-  gap: 48px;
+  grid-template-columns: 1.6fr 1fr 1.3fr;  gap: 48px;
   padding-bottom: 48px;
 }
 
-.brand {
-  max-width: 360px;
+.brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .logo {
@@ -29,6 +30,9 @@
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 16px;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
 }
 
 .logoIcon {
@@ -65,7 +69,7 @@
 .links nav {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .links a {
@@ -134,3 +138,4 @@
     text-align: center;
   }
 }
+
